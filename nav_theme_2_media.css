@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+    .nav_theme_2 .nav_toggle.active {
+        background-color: #790;
+    }
+    .nav_theme_2 .nav_toggle:hover {
+        background-color: #5e7c36;
+    }
+    .nav_theme_2 .nav_menu {
+        background-color: #790;
+    }
+}

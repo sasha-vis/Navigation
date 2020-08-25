@@ -1,0 +1,15 @@
+.nav_theme_2 {
+    border-radius: 0;
+    background-color: #790;
+}
+
+.nav_theme_2 a:hover {
+    background-color: transparent;
+    border-bottom: 4px solid #5e7c36;
+    padding-bottom: 16px;
+}
+
+.nav_theme_2 .nav_toggle:hover,
+.nav_theme_2 .nav_search_toggle:hover {
+    background-color: #5e7c36;
+}

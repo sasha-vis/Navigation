@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+    .nav_theme_5 .nav_toggle.active {
+        background-color: #ededed !important;
+    }
+    .nav_theme_5 .nav_menu {
+        background-color: #ededed !important;
+    }
+    .nav_theme_5 .nav_toggle.active ~ .nav_menu li {
+        border-bottom: 2px solid #ccc;
+    }
+    .nav_theme_5 .nav_search_toggle.active:hover {
+        border-bottom: 0;
+    }
+}

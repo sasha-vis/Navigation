@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+    .nav_theme_3 .nav_toggle.active,
+    .nav_theme_4 .nav_toggle.active {
+        background-color: #fff !important;
+    }
+    .nav_theme_3 .nav_toggle:hover,
+    .nav_theme_4 .nav_toggle:hover {
+        background-color: #790 !important;
+    }
+    .nav_theme_3 .nav_menu,
+    .nav_theme_4 .nav_menu {
+        background-color: #fff !important;
+    }
+}

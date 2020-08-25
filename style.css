@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    padding: 2%;
+    background-color: #ededed;
+}
+
+.nav {
+    background-color: #5e7c36;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.nav_toggle {
+    border: 0;
+    background-color: transparent;
+    padding: 30px 30px;
+    cursor: pointer;
+}
+
+.nav_toggle:hover {
+    background-color: #790;
+}
+
+.nav_toggle .ico_burger,
+.nav_toggle .ico_burger::before,
+.nav_toggle .ico_burger::after {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+}
+
+.nav_toggle .ico_burger {
+    position: relative;
+}
+
+.nav_toggle .ico_burger::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+}
+
+.nav_toggle .ico_burger::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+}
+
+.nav_menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav_menu > li {
+    display: none;
+}
+
+.nav_toggle:not(.active) ~ .nav_menu {
+    height: 61px;
+}
+
+.nav_toggle.active ~ .nav_menu > li {
+    display: block;
+}
+
+.nav_menu a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    display: block;
+}
+
+.nav_menu a:hover {
+    background-color: #790;
+}
+
+.nav_search {
+    margin-left: auto;
+
+    display: flex;
+}
+
+.nav_search_query {
+    background-color: #ededed;
+    height: 40px;
+    width: 200px;
+    align-self: center;
+
+    display: none;
+    order: -1;
+
+    border: 0;
+    box-shadow: inset 0 0 5px 2px #ccc;
+
+    position: absolute;
+    z-index: 0;
+
+    right: 10px;
+}
+
+.nav_search_toggle.active ~ .nav_search_query {
+    display: block;
+
+    opacity: .8;
+}
+
+.nav_search_toggle {
+    background-color: transparent;
+    border: 0;
+    padding: 0 30px;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+}
+
+.nav_search_toggle:not(.active):hover {
+    background-color: #790;
+}
+
+.nav_search_toggle .ico_search {
+    display: block;
+    border: 2px solid #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nav_search_toggle .ico_search::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -2px;
+    right: -5px;
+}
+
+.nav_search_toggle.active .ico_search {
+    border-color: #666;
+}
+.nav_search_toggle.active .ico_search::after {
+    background-color: #666;
+}

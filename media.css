@@ -1,0 +1,45 @@
+@media (max-width: 1150px) {
+    .nav_menu a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+     /* .nav:not(:last-child) {
+        margin-bottom: 300px;
+    } */
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        overflow: initial;
+        position: relative;
+    }
+    .nav_toggle.active {
+        background-color: #5e7c36;
+    }
+    .nav_toggle:hover {
+        background-color: #790;
+    }
+    .nav_menu {
+        display: block;
+        position: absolute;
+
+        background-color: #5e7c36;
+
+        top: 100%;
+
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        width:100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav_search_query {
+        opacity: 1 !important;
+        width: calc(100% - 20px);
+    }
+}

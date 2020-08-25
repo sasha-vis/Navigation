@@ -1,0 +1,42 @@
+.nav_theme_4 {
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.nav_theme_4 a {
+    color: #666;
+}
+
+.nav_theme_4 a:hover {
+    background-color: transparent;
+    border-bottom: 4px solid #790;
+    padding-bottom: 16px;
+}
+
+.nav_theme_4 .nav_toggle .ico_burger,
+.nav_theme_4 .nav_toggle .ico_burger::before,
+.nav_theme_4 .nav_toggle .ico_burger::after {
+    background-color: #666;
+}
+
+.nav_theme_4 .nav_toggle:hover .ico_burger,
+.nav_theme_4 .nav_toggle:hover .ico_burger::before,
+.nav_theme_4 .nav_toggle:hover .ico_burger::after {
+    background-color: #fff;
+}
+
+.nav_theme_4 .nav_search_toggle .ico_search {
+    border: 2px solid #666;
+}
+
+.nav_theme_4 .nav_search_toggle .ico_search::after {
+    background-color: #666;
+}
+
+.nav_theme_4 .nav_search_toggle:hover .ico_search {
+    border: 2px solid #fff;
+}
+
+.nav_theme_4 .nav_search_toggle:hover .ico_search::after {
+    background-color: #fff;
+}
